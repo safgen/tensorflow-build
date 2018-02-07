@@ -114,3 +114,7 @@ $ PKG_CONFIG_LIBDIR=/folder/where/the/pcfile/is PKG_CONFIG_ALLOW_CROSS=1 cargo b
 ```
 
 Enjoy!
+
+## Aditional Notes
+Earlier versions of tensorflow (earlier than v1.5.0) may have build files uncompatable withe newer bazel versions
+The latest Bazel version is 0.10 which creates a version check error because 0.10 < 0.5 (mathematically LOL), Bazel 0.9 work like a charm
