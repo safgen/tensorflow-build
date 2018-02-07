@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+############ NOTES ########
+# Earlier versions of tensorflow (earlier than v1.5.0) may have build files uncompatable withe newer bazel versions
+# The latest Bazel version is 0.10 which creates a version check error because 0.10 < 0.5 (mathematically LOL), Bazel 0.9 work like a charm  
 
 set -e
 
